@@ -26,11 +26,11 @@ function watch() {
 
 function fonts() {
   return gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/*')
-    .pipe(gulp.dest("src/fonts"));
+    .pipe(gulp.dest("src/webfonts"));
 }
 
 function fa() {
-  return gulp.src('node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css')
+  return gulp.src('node_modules/@fortawesome/fontawesome-free/css/all.min.css')
     .pipe(gulp.dest("src/css"));
 }
 

@@ -1,6 +1,7 @@
 $bg-color: #333;
 $font-color: #fff;
 $primary-color: #008ed6;
+$icon-size: 30px;
 
 body {
   background: $bg-color;
@@ -10,4 +11,36 @@ body {
 .navbar {
   border-bottom: $primary-color 2px solid;
   opacity: 0.8;
+}
+
+#hero-section {
+  background: url(../img/home.jpg) no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  position: relative;
+
+  #dark-overlay {
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #hero-content {
+    padding-top: 150px;
+
+    .card {
+      opacity: 0.8;
+    }
+
+    .fa-check{
+      color:$primary-color;
+      background:#fff;
+      padding:4px;
+      border-radius:5px;
+      font-size:$icon-size;
+    }
+  }
 }
