@@ -44,3 +44,13 @@ body {
     }
   }
 }
+
+#explore-section {
+  .fa-check{
+    color: $font-color;
+    background: $bg-color;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: $icon-size;
+  }
+}
